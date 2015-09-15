@@ -1,10 +1,10 @@
-public class WoolieP2 implements Runnable {
+public class Woolie implements Runnable {
 	String name;
 	int speed;
 	String city;
 	static Bridge b = new Bridge();
 
-	public WoolieP2(String name, int speed, String city, Bridge bridge){
+	public Woolie(String name, int speed, String city, Bridge bridge){
 		this.name = name;
 		this.speed = speed;
 		this.city = city;
@@ -27,9 +27,9 @@ public class WoolieP2 implements Runnable {
 		b.leaveBridge();
 	}
 	public static void main(String args[]){
-		Thread richard = new Thread(new WoolieP2("richard", 5, "there", b));
-		Thread test = new Thread(new WoolieP2("test", 2, "here", b));
-		Thread thread = new Thread(new WoolieP2("thread", 4, "here", b));
+		Thread richard = new Thread(new Woolie("richard", 5, "there", b));
+		Thread test = new Thread(new Woolie("test", 2, "here", b));
+		Thread thread = new Thread(new Woolie("thread", 4, "here", b));
 		richard.start();
 		test.start();
 		thread.start();
