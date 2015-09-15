@@ -26,7 +26,7 @@ public class Woolie implements Runnable {
 		}
 		System.out.println(name + " leaves at " + city + ".");
 	}
-	public static void main(String name){
+	public static void main(String args[]){
 		Thread richard = new Thread(new Woolie("richard", 5, "there"));
 		Thread test = new Thread(new Woolie("test", 2, "here"));
 		richard.start();
