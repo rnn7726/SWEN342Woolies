@@ -12,7 +12,7 @@ public class Woolie implements Runnable {
 	}
 	public void run(){
 		System.out.println(name + " has arrived at the bridge.");
-		b.enterBridge();
+		b.enterBridge(this);
 		for (int i = 0; i < speed; i++){
 			try {
 				if(i == 0){
