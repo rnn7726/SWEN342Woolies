@@ -30,9 +30,11 @@ public class Woolie implements Runnable {
 		Thread richard = new Thread(new Woolie("richard", 5, "there", b));
 		Thread test = new Thread(new Woolie("test", 2, "here", b));
 		Thread thread = new Thread(new Woolie("thread", 4, "here", b));
+		Thread joe = new Thread(new Woolie("joe", 3, "there", b));
 		richard.start();
 		test.start();
 		thread.start();
+		joe.start();
 	}
 	
 }
